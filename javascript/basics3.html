@@ -1,0 +1,20 @@
+<!-- Confirm before leaving the page -->
+<script>
+x = document.location;
+function confirmlink(){   
+    y = confirm();
+    if(y){
+        document.location = "basics1.html";
+    }
+    else{
+        alert("Stopped redirection");
+    }
+}
+
+</script>
+
+<body>
+    <h3>Confirm before leaving the page</h3>
+    <button onclick="confirmlink()">Click Here</button>
+
+</body>

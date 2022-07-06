@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function ct() {
+            x = document.getElementById("d1");
+            y = x.innerHTML;
+            z = document.getElementById("d3")
+            z.value = x.innerHTML
+        }
+        function ct2() {
+            x = document.getElementById("d1");
+            z = document.getElementById("d4")
+            x.innerHTML = z.value;
+        }
+        function ct3() {
+            x = document.getElementById("d1");
+            z = document.getElementById("d5")
+            x.innerHTML = z.value;
+        }
+    </script>
+</head>
+<body>
+    <div id="d1">Hellow</div>
+    <div id="d2">World</div>
+    <input id="d3" type="text" value="">
+    <button onclick="ct()">click me</button>
+    <br/>
+    <textarea onkeyup="ct3()" name="mytext" id="d5" cols="30" rows="10"></textarea>
+    <br>
+    <input onkeyup="ct2()" id="d4" type="text" value="">
+    <button onmouseover="ct2()">click me</button>
+
+</body>
+</html>

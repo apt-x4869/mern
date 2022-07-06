@@ -1,0 +1,23 @@
+<script type="text/javascript">
+
+function test(){
+    var names = [ "aman", "tom", "rick", "harry", "pop"];
+    a = document.getElementsByTagName("input");
+    for (count = 0 ; count < a.length; count++)
+    a[count].value = names[count];
+};
+
+</script>
+
+<body>
+Name1: <input type="text" name="x1" id="x1">
+<br>
+Name2: <input type="text" name="x2" id="x2">
+<br>
+Name3: <input type="text" name="x3" id="x3">
+<br>
+<button onclick="test();">Click me</button>
+</body>
+
+<!-- 
+    javascript: alert(document.getElementsByTagName("div").length); -->
